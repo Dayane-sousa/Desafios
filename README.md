@@ -1,2 +1,2 @@
 # Desafios
-Aqui estará todos os desafios feitos na faculdade
+Neste repositório estará os desafios feitos na disciplina: Programação para a internet.
