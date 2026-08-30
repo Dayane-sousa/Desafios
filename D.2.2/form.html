@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de cadastro</title>
-    <link rel=”stylesheet” href=”index.css”>
+    <title>Enquete sobre os clientes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="pag.jap" mathop="get" name="cadastro"></form>
+    <form action="pag.php" mathop="post" name="enquete"></form>
      <fieldset>
-        <p><legend><h1>Form Name</h1></legend></p><hr>
-        <p><label>Nome:</label>
-            <input type="text" name="nome" size="30" placeholder="nome completo"> <br>
+         <p>
+            <legend><h1>Form Name</h1></legend>
         </p>
-        <p><label>Data de nascimento:</label>
-            <input type="" name="data"> <br>
+        <hr>
+        <p>
+            <label>Nome:</label>
+            <input type="text" name="nome" size="35" placeholder="nome completo"><br>
         </p>
-        <p><label>Endereço:</label>
+        <p>
+            <label>Data de nascimento:</label>
+            <input type="text" name="data"><br>
+        </p>
+        <p>
+            <label>Endereço:</label>
+            <input type="text" size="25"><br>
+        </p>
+        <p>
+            <label for="rno">Rno:</label>
             <input type="text" size="30"><br>
         </p>
-        <p><label>Rno:</label>
-            <input type="" size="30"><br>
+        <p>
+            <label for="cidade">Cidade:</label>
+            <input type="text" size="35"><br>
         </p>
-        <p><label>Cidade:</label>
-           <input type="text" size="30" placeholder="diga sua cidade"><br>
-        </p>
-        <p><label>Estado:</label>
-            <select name="estado">
+        <p>
+            <label for="est">Estado:</label>
+            <select name="estado" id="est"cols=30 >
                 <option value="ac">Acre</option>
                 <option value="al">Alagoas</option>
                 <option value="ap">Amapá</option>
@@ -56,25 +65,30 @@
                <option value="to">Tocantins</option>
             </select>
         </p>
-        <p><label>Sexo:</label>
-            <select name="sexo" id="sexo">
-               <option value="f" id="sexo">feminino</option>
-               <option value="m" id="sexo">masculino</option>
+        <p>
+            <label for="sex">Sexo:</label>
+            <select name="sexo" id="sex">
+               <option value="f" id="sexo">Feminino</option>
+               <option value="m" id="sexo">Masculino</option>
             </select>
          </p>
-        <p><label>Bens pessoas:</label><br>
+        <p>
+            <label>Bens pessoas:</label><br>
             <input type="checkbox" id="opcao1" name="caixa" value="casa">
-            <label for="opcao1">casa</label><br>
+            <label for="opcao1">Casa</label><br>
             <input type="checkbox" id="opcao2" name="caixa" value="carro">
-            <label for="opcao2">carro</label><br>
+            <label for="opcao2">Carro</label><br>
             <input type="checkbox" id="opcao3" name="caixa" value="moto">
-            <lavel for="opcao3">moto</lavel><br>
+            <label for="opcao3">Moto</label><br>
         </p>
-        <p><label>text area</label>
-            <textarea name="text area" id="" placeholder="Experiências Pessoais" size="40"></textarea>
+        <p>
+            <label for="mensagem">Text area</label>
+            <textarea name="text" id="mensagem" placeholder="Experiências Pessoais"cols=30 rows="5"></textarea>
         </p>
-        <input type="submit" value="enviar">
-        <input type="reset" value="limpa">
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </fieldset>
     </form>
 </body>

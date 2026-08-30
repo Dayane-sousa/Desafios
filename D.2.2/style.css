@@ -1,3 +1,5 @@
+@charset "UTF-8";       
+         
         bory{
           background-color: silver;
           color: black; 
@@ -17,6 +19,7 @@
             border-radius: 15px;
             background-color: white;
             box-shadow: 2px 2px 2px gray;
+
         }
         input, select, textarea{
             border-radius: 4px;
